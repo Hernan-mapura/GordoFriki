@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Inicio</title>
+</head>
+<body>
+
+<div id="Inicio3">
+    <h1>Recomendaciones</h1>
+    <img src="/static/img/gordo.png" id="img1">
+    <hr id="hr1">
+    <a href="/" id="link1">Inicio</a>
+    <a href="/paginas" id="link3">Páginas</a> 
+    <hr id="hr2">
+    <p id="texto">Escribe algo que quieras decirle al gordo, escribe tu nombre <br>con el cual eres representado en twitch o en youtube<br>para que él pueda saber quien eres, después de un lapso de<br>tiempo estos comentarios se le mostrarán a él.</p>
+    <form action="/recomendaciones" class="chequeo" method='POST'>
+        <fieldset>
+            <legend>Datos</legend>
+            <p>Nombre:</p>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" autocomplete="off" required>
+            <h4>Descripcion</h4>
+            <textarea name="descripcion" autocomplete="off" placeholder="Ingrese su descripción" required></textarea>
+            <button type="submit">ENVIAR</button>
+        </fieldset>
+    </form> 
+</div>
+<footer>
+    <p>&copy; Página realizada por Jorge Hernan Mapura Londoño. 2020</p>		
+</footer>
+<div class="clear"></div>
+</body>
+</html>
